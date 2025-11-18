@@ -1,0 +1,63 @@
+test.html
+:
+  结构 HTML
+  样式 CSS
+  行为 JavaScript
+
+HTML：Hyper Text Markup Language，超文本标记语言
+
+标签 Tag：HTML 的基本单元，比如 <p> 成为开始标签，</p>称为结束标签。
+
+元素 Element：HTML 的组成单元，比如 <p>Content</p> 成为元素
+
+属性 Attribute：标签的辅助信息。比如 <a href="https://zpa.com"> 其中 href 叫做属性
+
+语言：
+<html lang="en">
+中文是 zh-CN
+
+head头：
+<title> 网页的标题
+<base> 指定了一个基本 URL，其他地方就可以通过相对路径来引用网站资源。
+<meta> 网页的元信息
+<link> 外部资源引用
+
+标题标签：
+<h1>zpa<h1>
+<h2>zpa<h2>
+<h3>zpa<h3>
+
+段落标签：
+<p>hello,zpa</p>
+
+HTML 中声明编码：
+<meta charset="UTF-8">
+
+超链接：
+Http 超链接
+<a href="https://zpa.com/">zpa</a>
+邮件链接，不常用
+<a href="mailto:wkpcoder@163.com">给zpa发邮件</a>
+
+图片标签：
+相对路径
+<img src="./k.png">
+绝对路径
+<imgsrc="https://zpa.com/k.png">
+
+列表：
+有序列表 order list： <ol>
+无序列表 unordered list：<ul>
+列表项 <li>
+
+表格：
+表格 <table>
+行 table row <tr>
+表格头 table head <th>
+表格内容 table data <td>
+
+转义字符：
+<p> 会被当做 HTML 标签来渲染了，所以需要对 < 和 > 进行转义：
+<div>
+  &lt;p&gt;
+</div>
