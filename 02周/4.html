@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>三种 JS 引入方式大满贯</title>
+
+    <!-- 2. 内嵌式区域 -->
+    <script>
+        function runInner() {
+            var age = prompt("【内嵌式测试】请输入你的年龄：");
+            console.log("年龄是：" + age);
+        }
+    </script>
+
+    <!-- 3. 外部式引入 (请确保同级目录下有个 tool.js 文件) -->
+    <!-- 如果你懒得建文件，第三个按钮会没反应 -->
+    <script src="tool.js"></script>
+</head>
+<body>
+
+    <h3>JavaScript 三种引入方式演示</h3>
+
+    <!-- 1. 行内式：alert -->
+    <button onclick="alert('【行内式】我是直接写在标签里的！')">
+        1. 行内式 (Alert)
+    </button>
+
+    <br><br> 
+
+    <!-- 2. 内嵌式：prompt -->
+    <button onclick="runInner()">
+        2. 内嵌式 (Prompt)
+    </button>
+
+    <br><br>
+
+    <!-- 3. 外部式：print (需要在 tool.js 里写 window.print() ) -->
+    <button onclick="startPrint()">
+        3. 外部式 (Print)
+    </button>
+    <!-- 注：为了演示，这里直接写了 window.print()。
+         标准的外部式应该是像上面讲的那样，由外部文件定义函数，这里调用函数。
+    -->
+
+</body>
+</html>
